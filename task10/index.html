@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>task10</title>
+    <style type="text/css">
+        body,div{
+            padding:0;
+            margin:0;
+        }
+        .main{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            align-items:center;
+        }
+        .box{
+            box-sizing:border-box;
+            width:150px;
+            padding:20px;
+            margin-bottom:10px;
+        }
+        .num1{
+            height:120px;
+            border:1px solid #f00;
+        }
+        .num2{
+            height:100px;
+            border:1px solid #f00;
+        }
+        .num3{
+            height:40px;
+            border:1px solid #f00;
+        }
+        .num4{
+            height:200px;
+            border:1px solid #0f0;
+        }
+        @media all and (max-width:640px){
+            .main{
+                align-items:flex-start;
+                flex-wrap:wrap;
+            }
+            .num4{
+                order:-1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box num1"></div>
+        <div class="box num2"></div>
+        <div class="box num3"></div>
+        <div class="box num4"></div>
+    </div>
+</body>
+</html>
