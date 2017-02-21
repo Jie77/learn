@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>task18</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        span{
+            display:inline-block;
+            height:40px;
+            width:40px;
+            background-color:#E50D0D;
+            line-height:40px;
+            font-size:18px;
+            text-align:center;
+            margin-top:10px;
+            margin-right:10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="text" id="data">
+    <button id="left-in">左侧进</button>
+    <button id="right-in">右侧进</button>
+    <button id="left-out">左侧出</button>
+    <button id="right-out">右侧出</button>
+    <div id="content">
+        
+    </div>
+    <script type="text/javascript">
+        var $ = function(id){
+            return document.getElementById(id);
+        }
+        var arr = [];
+        function validate(str){
+            return /^\d+$/.test(str);
+        }
+
+        function output(arr){
+            var str = '';
+            /*for (var i=0;i<arr.length;i++){
+                str += "<span>"+arr[i]+"</span>";
+            }*/
+            $("content").innerHTML = arr.map(function(element){
+                return "<span>"+element+"</span>";
+            }).join('');
+            /*arr.map(function(element){
+                str += "<span>"+element+"</span>";
+            })
+            $("content").innerHTML = str;*/
+        }
+            
+        $("left-in").onclick = function(){
+            var data = $("data").value;
+            if(!validate(data)){
+                alert("请输入有效数字");
+            }else{
+                arr.unshift(data);
+                output(arr);
+            }
+        }
+        $("right-in").onclick = function(){
+            var data = $("data").value;
+            if(!validate(data)){
+                alert("请输入有效数字");
+            }else{
+                arr.push(data);
+                output(arr);
+            }
+        }
+        $("left-out").onclick = function(){
+            if (arr.length!=0){
+                alert("左侧删除"+arr.shift());
+                output(arr);
+            }else{
+                alert("目前队列为空");
+            }
+            
+        }
+        $("right-out").onclick = function(){
+            if (arr.length!=0){
+                alert("右侧删除"+arr.pop());
+                output(arr);
+            }else{
+                alert("目前队列为空");
+            }
+            
+        }
+    </script>
+</body>
+</html>
