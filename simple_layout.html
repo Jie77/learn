@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			padding:0;
+			margin:0;
+		}
+		.container{
+			display:flex;
+			flex-direction:column;
+			width:100%;
+			height:964px;
+		}
+		header{
+			height:5%;
+			background-color:#F53C3C;
+			text-align:center;
+			line-height:50px;
+		}
+		.logo{
+			display:flex;
+			height:10%;
+		}
+		.logo .num1{
+			flex-basis:20%;
+			background-color: #F35BAB;
+			text-align:center;
+			line-height:100px;
+		}
+		.logo .num2{
+			flex-basis:80%;
+			background-color:#EF2AE9;
+		}
+		nav{
+			height:5%;
+			background-color:#C33FEF;
+			display:flex;
+		}
+		nav .left{
+			background-color:#D6D25A;
+			width:20%;
+			height:100%;
+		}
+		nav .right{
+			width:80%;
+			height:100%;
+		}
+		ul{
+			height:100%;
+			list-style:none;
+			display:flex;
+		}
+		li{
+			height:100%;
+			flex-basis:25%;
+			text-align:center;
+			line-height:50px;
+			align-items:center;
+		}
+		section{
+			height:65%;
+			display:flex;
+		}
+		section .left{
+			flex-basis:20%;
+			background-color:#612BDE;
+		}
+		section .main{
+			flex-basis:60%;
+			display:flex;
+			flex-direction:column;
+		}
+		section .main .num1{
+			height:7%;
+			background-color:#3299F6;
+			text-align:center;
+			line-height:45.5px;
+		}
+		section .main .num2{
+			height:43%;
+			background-color:#24F5DA;
+		}
+		section .main .num3{
+			height:7%;
+			background-color:#28DE93;
+			text-align:center;
+			line-height:45.5px;
+		}
+		section .main .num4{
+			height:43%;
+			background-color:#28E055;
+		}
+		section .right{
+			flex-basis:20%;
+			background-color:#1926EC;
+		}
+		footer{
+			height:15%;
+			display:flex;
+			flex-direction:column;
+			text-align:center;
+			line-height:75px;
+		}
+		footer .num1{
+			height:50%;
+			background-color:#E4D72F;
+			flex:1;
+		}
+		footer .num2{
+			height:50%;
+			background-color:#EE8543;
+			flex:1;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header class="top_bg">header</header>
+		<div class="logo">
+			<div class="num1">logo<img src=""></div>
+			<div class="num2"><img src=""></div>
+		</div>
+		<nav>
+			<div class="left"></div>
+			<div class="right">
+				<ul>
+					<li>num1</li>
+					<li>num2</li>
+					<li>num3</li>
+					<li>num4</li>
+				</ul>
+			</div>
+		</nav>
+		<section>
+			<aside class="left"></aside>
+			<div class="main">
+				<div class="num1">titlt</div>
+				<div class="num2"></div>
+				<div class="num3">title</div>
+				<div class="num4"></div>
+			</div>
+			<aside class="right"></aside>
+		</section>
+		<footer>
+			<div class="num1">footer</div>
+			<div class="num2">footer</div>
+		</footer>
+	</div>
+</body>
+</html>
