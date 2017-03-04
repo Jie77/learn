@@ -71,19 +71,19 @@ header nav ul .move{
     -moz-transition: left 0.4s ease-in-out;
     transition: left 0.4s ease-in-out;
 }
-header nav ul li:nth-child(1):hover~.move{
+header nav ul li:nth-child(1):hover .move{
     left: 0;
 }
-header nav ul li:nth-child(2):hover~.move{
+header nav ul li:nth-child(2):hover .move{
     left: 20%; 
 }
-header nav ul li:nth-child(3):hover~.move{
+header nav ul li:nth-child(3):hover .move{
     left: 40%;
 }
-header nav ul li:nth-child(4):hover~.move{
+header nav ul li:nth-child(4):hover .move{
     left: 60%;
 }
-header nav ul li:nth-child(5):hover~.move{
+header nav ul li:nth-child(5):hover .move{
     left: 80%;
 }
 header .banner-right{
