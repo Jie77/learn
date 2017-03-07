@@ -35,14 +35,65 @@
 		</div>
 	</header>
 	<section class="banner">
-		<div></div>
+		<div class="title">
+			<h1 id="words">The unexamined life is not worth living</h1>
+			<ul id="focusBox">
+				<li class="cur1" onclick="showWords(0)" ><i class="fa fa-circle-o" aria-hidden="true"></i></li>
+				<li class="cur" onclick="showWords(1)" ><i class="fa fa-circle-o" aria-hidden="true"></i></li>
+				<li class="cur" onclick="showWords(2)" ><i class="fa fa-circle-o" aria-hidden="true"></i></li>
+			</ul>
+		</div>
 	</section>
-	<section class="about" id="about"></section>
-	<section class="contact" id="contact"></section>
-	<section class="join" id="join"></section>
+	<section class="about" id="about">
+		<div class="container">
+			<h3 class="title">
+				<span>About</span>
+			</h3>
+			<div class="item">
+				<img src="./image/logo.svg">
+				<div class="introduce">
+					<h3>someWord someWord someWord someWordsomeWord someWord someWord someWordsomeWord someWord someWord someWord</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contact" id="contact">
+		<div class="left">
+			<h3>someWord someWord someWord someWord someWord someWord someWord someWord someWord someWordsomeWord someWord someWord someWord</h3>
+		</div>
+		<div class="right"> 
+			<h3>someWord someWord someWord someWord someWord someWord someWord someWord someWord someWord someWord someWord someWord someWord</h3>
+		</div>
+	</section>
+	<section class="join" id="join">
+		<div class="main">
+			<form action="" method="post">
+				<table>
+					<tr>
+						<td>Name</td>
+						<td><input type="text" name=""text></td>
+					</tr>
+					<tr>
+						<td>Gender</td>
+						<td>
+							<input type="radio" name="gender">boy
+							<input type="radio" name="gender">girl
+						</td>
+					</tr>
+					<tr>
+						<td>email</td>
+						<td><input type="email" name="email"></td>
+					</tr>
+					<tr>
+						<td>About youself</td>
+						<td><input type="textarea" name="yourself"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</section>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript">
-'use strict';
 	$(".small_right").toggle(function(){
 		$(".small_nav").css('height','20em');
 		$(".small_nav").css('opacity','1');
@@ -59,6 +110,23 @@
 			return false;
 		})
 	}
+	var sign = 1;
+	var wordsList = ["The unexamined life is not worth living","Genius only means hard-working all one's life","Cease to struggle and you cease to live"];
+	function showWords(index){
+		$('#words').html(wordsList[index]); 
+		$("#words").css('opacity','1');
+		var lis = document.getElementById('focusBox').getElementsByTagName('li');
+		for (var i=0;i<lis.length;i++){
+			lis[i].className = "cur";
+		}
+		lis[index].className = "cur1";
+	}
+	function setPic(){
+		$('#words').css('opacity','0');
+		setTimeout("showWords(sign%3)",500);
+		sign++;
+	}
+	window.setInterval("setPic()",8000);
 </script>
 </body>
 </html>
