@@ -11,6 +11,7 @@ html{
 }
 body{
 	font-size:1em;
+	font-family:微软雅黑;
 }
 .clear{
 		clear:both;
@@ -20,7 +21,6 @@ header{
 	height:4em;
 	background-color:#000;
 	position:fixed;
-	font-family:微软雅黑;
 	opacity:0.3;
 	z-index:100;
 }
@@ -194,13 +194,10 @@ header .small_nav{
 	font-size:2em;
 }
 .about .container .item .introduce h3{
-	margin-top:15%;
+	margin-top:5%;
 }
 /*-------------------------about end -----------------------*/
 
-.contact{
-	background-color:#1CC8AE;
-}
 .contact .left{
 	display:block;
 	height:100%;
@@ -228,21 +225,80 @@ header .small_nav{
 /*-----------------------contact end-----------------------*/
 
 .join{
-	background-color:#12151b;
+	background-color:#07070F;
+	font-family:cursive;
 }
-.join .main td{
-	color:#666;
-	font-size:2em;
+.join .main{
+	height:100%;
+	width:55%;
+	margin:0 auto;
 }
-.join .main td input{
+.join .main .j_title{
 	display:block;
-	height:2.5em;
-	width:10em;
-	border-radius:2px;
-	border:2px solid #666;
+	height:2em;
+	width:90%;
+	color:#fff;
+	margin:0 auto;
+	padding:0.6em 0;
+	font-size:2em;
+	text-align:center;
+}
+.join .main .j_title:after{
+	content:'';
+	display:block;
+	height:0.1em;
+	width:4em;
+	background-color:red;
+	margin:0 auto;
+	margin-top:0.3em;
+}
+.join .main input{
+	display:block;
 	outline:none;
+	width:48%;
+	height:3em;
+	border:1px solid #666;
+	font-size:1.5em;
+	margin-top:1em;
+	color:#666;
+}
+.join .main select{
+	display:block;
+	outline:none;
+	width:48%;
+	height:3em;
+	border:1px solid #666;
+	font-size:1.5em;
+	margin-top:1em;
+	color:#666;
+}
+.join .main #name,.join .main #email{
+	float:left;
+}
+.join .main #tel,.join .main #choose{
+	float:right;
+}
+.join .main textarea{
+	width:100%;
+	height:10em;
+	margin-top:1em;
+	font-size:1.4em;
+	color:#666;
+}
+.join .main button{
+	display:block;
+	width:100%;
+	height:2em;
+	border:1px solid #1562AD;
+	font-size:1.3em;
+	font-family:cursive;
+	border-radius:30px;
+	background-color:#0E577C;
+	box-shadow:0 0 2px #1562AD;
+	margin-top:1em;
 }
 
+/*-----------------------join end--------------------------*/
 @media screen and (max-width:499px) {
 	header .right{
 		display:none;
@@ -291,8 +347,11 @@ header .small_nav{
 	.banner .title h1{
 		font-size:2.2em;
 	}
-	.join,.contact,.about{
+	.contact,.about{
 		height:100%;
+	}
+	.join{
+		height:42em;
 	}
 	.about .container .item img{
 		float:none;
@@ -315,6 +374,57 @@ header .small_nav{
 	.about .container .item .introduce h3{
 		margin:15% auto;
 	}
+	.contact h3{
+		position:relative;
+		top:10%;
+		margin:0 3%;
+		font-size:0.8em;
+	}
+	.join .main{
+		width:100%;
+	}
+	.join .main .j_title{
+		padding:0;
+		font-size:2em;
+		height:3em;
+		width:79%;
+	}
+	.join .main input{
+		width:95%;
+		margin:0 auto;
+		margin-top:1em;
+		height:2em;
+	}
+	.join .main select{
+		width:95%;
+		margin:0 auto;
+		margin-top:1em;
+		height:2em;
+	}
+	.join .main #name,.join .main #email{
+		float:none;
+	}
+	.join .main #tel,.join .main #choose{
+		float:none;
+	}
+	.join .main select{
+		width:95%;
+		margin:0 auto;
+		margin-top:1em;
+	}
+	.join .main textarea{
+		width:95%;
+		height:10em;
+		margin:0 auto;
+		margin-top:1em;
+		font-size:1.4em;
+		display:block;
+	}
+	.join .main button{
+		width:90%;
+		margin:0 auto;
+		margin-top:1em;
+	}
 }
 @media screen and (max-width:899px) and (min-width:500px){
 	.banner .title{
@@ -324,5 +434,62 @@ header .small_nav{
 	}
 	.banner .title h1{
 		font-size:2.2em;
+	}
+	.about .container .title{
+		margin-bottom:3%;
+	}
+	.about .container .item .introduce{
+		font-size:1em;
+	}
+	.about .container .item .introduce h3{
+		margin-top:0;
+	}
+	.contact h3{
+		position:relative;
+		top:10%;
+		margin:0 3%;
+		font-size:0.5em;
+	}
+	.join{
+		height:28em;
+	}
+	.join .main{
+		width:98%;
+	}
+	.join .main .j_title{
+		padding:0;
+		font-size:2em;
+		height:2em;
+		width:100%;
+	}
+	.join .main input{
+		width:47%;
+		margin:0 auto;
+		margin-top:1em;
+		height:2em;
+	}
+	.join .main select{
+		width:47%;
+		margin:0 auto;
+		margin-top:1em;
+		height:2em;
+	}
+	.join .main select{
+		width:47%;
+		margin:0 auto;
+		margin-top:1em;
+	}
+	.join .main textarea{
+		width:100%;
+		height:8em;
+		margin:0 auto;
+		margin-top:1em;
+		font-size:1.4em;
+		display:block;
+	}
+	.join .main button{
+		width:100%;
+		margin:0 auto;
+		margin-top:1em;
 	}
 }
