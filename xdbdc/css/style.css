@@ -99,10 +99,10 @@ header .small_nav{
 .banner .title h1{
 	color:#fff;
 	font-size:4em;
-	transition:all 0.5s ease-in-out;
-	-moz-transition:all 0.5s ease-in-out /* Firefox 4 */
-	-webkit-transition:all 0.5s ease-in-out /* Safari and Chrome */
-	-o-transition:all 0.5s ease-in-out; /* Opera */
+	transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out /* Firefox 4 */
+	-webkit-transition:all 0.3s ease-in-out /* Safari and Chrome */
+	-o-transition:all 0.3s ease-in-out; /* Opera */
 }
 .banner .title ul{
 	display:flex;
@@ -322,10 +322,10 @@ header .small_nav{
 		height:0em;
 		width:100%;
 		opacity:0.3;
-		transition:all 0.5s ease-in-out;
-		-moz-transition:all 0.5s ease-in-out /* Firefox 4 */
-		-webkit-transition:all 0.5s ease-in-out /* Safari and Chrome */
-		-o-transition:all 0.5s ease-in-out; /* Opera */
+		transition:all 0.3s ease-in-out;
+		-moz-transition:all 0.3s ease-in-out /* Firefox 4 */
+		-webkit-transition:all 0.3s ease-in-out /* Safari and Chrome */
+		-o-transition:all 0.3s ease-in-out; /* Opera */
 		overflow:hidden;
 	}
 	header .small_nav ul{
@@ -356,7 +356,7 @@ header .small_nav{
 		font-size:2.2em;
 	}
 	.contact,.about{
-		height:100%;
+		height:625px;
 	}
 	.join{
 		height:42em;
