@@ -100,6 +100,9 @@ header .small_nav{
 	color:#fff;
 	font-size:4em;
 	transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out /* Firefox 4 */
+	-webkit-transition:all 0.5s ease-in-out /* Safari and Chrome */
+	-o-transition:all 0.5s ease-in-out; /* Opera */
 }
 .banner .title ul{
 	display:flex;
@@ -203,8 +206,9 @@ header .small_nav{
 	height:100%;
 	width:50%;
 	float:left;
-	background:url(../image/programmer.jpg) no-repeat;
-	background-size:cover;
+	/*background:url(../image/programmer.jpg) no-repeat;
+	background-size:cover;*/
+	background-color:red;
 	color:#fff;
 	font-size:2em;
 }
@@ -213,8 +217,9 @@ header .small_nav{
 	height:100%;
 	width:50%;
 	float:right;
-	background:url(../image/Operation.jpg) no-repeat;
-	background-size:cover;
+	/*background:url(../image/Operation.jpg) no-repeat;
+	background-size:cover;*/
+	background-color:green;
 	color:#666;
 	font-size:2em;
 }
@@ -318,6 +323,9 @@ header .small_nav{
 		width:100%;
 		opacity:0.3;
 		transition:all 0.5s ease-in-out;
+		-moz-transition:all 0.5s ease-in-out /* Firefox 4 */
+		-webkit-transition:all 0.5s ease-in-out /* Safari and Chrome */
+		-o-transition:all 0.5s ease-in-out; /* Opera */
 		overflow:hidden;
 	}
 	header .small_nav ul{
@@ -363,7 +371,7 @@ header .small_nav{
 		float:none;
 		height:50%;
 		width:100%;
-		background-position:-60px 0;
+		/*background-position:-60px 0;*/
 	}
 	.about .container .item .introduce{
 		float:none;
