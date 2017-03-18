@@ -367,12 +367,12 @@ header .small_nav{
 		margin:0 auto;
 	}
 	.contact .left,.contact .right{
-		float:none;
+		clear:both;
 		height:50%;
 		width:100%;
 		background-position:-50px 0;
 	}
-	/*.about .container .item .introduce{
+	.about .container .item .introduce{
 		float:none;
 		width:100%;
 		height:50%;
@@ -380,13 +380,13 @@ header .small_nav{
 	}
 	.about .container .item .introduce h3{
 		margin:15% auto;
-	}*/
-	/*.contact h3{
+	}
+	.contact h3{
 		position:relative;
 		top:10%;
 		margin:0 3%;
 		font-size:0.8em;
-	}*/
+	}
 	.join .main{
 		width:100%;
 	}
@@ -445,7 +445,7 @@ header .small_nav{
 	.about .container .title{
 		margin-bottom:3%;
 	}
-	/*.about .container .item .introduce{
+	.about .container .item .introduce{
 		font-size:1em;
 	}
 	.about .container .item .introduce h3{
@@ -456,7 +456,7 @@ header .small_nav{
 		top:10%;
 		margin:0 3%;
 		font-size:0.5em;
-	}*/
+	}
 	.join{
 		height:28em;
 	}
