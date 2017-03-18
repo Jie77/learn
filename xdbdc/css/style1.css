@@ -138,7 +138,7 @@ header .small_nav{
 
 /*--------------------------------------------------*/
 .join,.contact,.about{
-	width:100%;
+	width:42em;
 	height:70%;
 	z-index:10;
 	position:relative;
