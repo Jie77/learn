@@ -105,8 +105,7 @@ header .small_nav{
 	-o-transition:all 0.3s ease-in-out; /* Opera */
 }
 .banner .title ul{
-	display:flex;
-	justify-content:space-around;
+	display:block;
 	list-style:none;
 	width:32%;
 	margin:0 auto;
@@ -117,6 +116,7 @@ header .small_nav{
 .banner .title ul .cur{
 	display:block;
 	float:left;
+	width:33.333%;
 	font-weight:bolder;
 	color:#F9F74B;
 	font-size:1.5em;
@@ -125,6 +125,7 @@ header .small_nav{
 .banner .title ul .cur1{
 	display:block;
 	float:left;
+	width:33.333%;
 	font-weight:bolder;
 	color:#68A3E8;
 	font-size:1.5em;
@@ -217,6 +218,7 @@ header .small_nav{
 	float:right;
 	background:url(../image/Operation.jpg) no-repeat;
 	background-size:cover;
+
 	color:#666;
 	font-size:2em;
 }
@@ -353,7 +355,7 @@ header .small_nav{
 		font-size:2.2em;
 	}
 	.contact,.about{
-		height:100%;
+		height:42em;
 	}
 	.join{
 		height:42em;
@@ -370,7 +372,7 @@ header .small_nav{
 		width:100%;
 		background-position:-50px 0;
 	}
-	.about .container .item .introduce{
+	/*.about .container .item .introduce{
 		float:none;
 		width:100%;
 		height:50%;
@@ -378,13 +380,13 @@ header .small_nav{
 	}
 	.about .container .item .introduce h3{
 		margin:15% auto;
-	}
-	.contact h3{
+	}*/
+	/*.contact h3{
 		position:relative;
 		top:10%;
 		margin:0 3%;
 		font-size:0.8em;
-	}
+	}*/
 	.join .main{
 		width:100%;
 	}
