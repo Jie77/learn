@@ -1,163 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-  <style type="text/css">
-*{
-	padding:0;
-	margin:0;	
-}
-html,body{
-	height:100%;
-	box-sizing:border-box;
-}
-html{
-	font-size:100%
-}
-body{
-	font-size:1em;
-}
-.clear{
-		clear:both;
-	}
-header{
-	width:100%;
-	height:4em;
-	background-color:#000;
-	position:fixed;
-	font-family:微软雅黑;
-	opacity:0.3;
-	z-index:100;
-}
-header:before,header:after{
-	content:'';
-	display:table;
-	clear:both;
-}
-header .left{
-	display:block;
-	height:100%;
-	width:8em;
-	float:left;
-	line-height:4em;
-	text-align:center;
-}
-header .left a{
-	color:#fff;
-	font-size:2em;
-	text-decoration:none;
-	transition:all 0.3s ease-in-out;
-}
-header .left a:hover{
-	color:green;
-}
-header .right{
-	display:block;
-	float:right;
-}
-header .right ul{
-	display:block;
-	list-style:none;
-	height:4em;
-}
-header .right ul li{
-	display:block;
-	float:left;
-	height:4em;
-	line-height:4em;
-	margin-right:0.8em;
-}
-header .right ul li a{
-	color:#fff;
-	font-size:1.2em;
-	text-decoration:none;
-	transition:all 0.3s ease-in-out;
-}
-header .right ul li a:hover{
-	color:green;
-}
-header .small_right{
-	display:none;
-}
-header .small_nav{
-	display:none;
-}
-/*--------------------------header end-----------------------------*/
-
-.banner{
-	width:100%;
-	height:100%;
-	background:url(image/snow.jpg) no-repeat;
-	background-size:cover;
-	z-index:1;
-	position:fixed;
-}
-/*-------------------------section1 end----------------------------*/
-
-.join,.contact,.about{
-	width:100%;
-	height:50%;
-	background-color: green;
-	z-index:10;
-	position:relative;
-	top:100%;
-}
-.contact{
-	background-color:#1CC8AE;
-}
-.about{
-	background-color:#E57A31;
-}
-
-@media screen and (max-width:450px) {
-	header .right{
-		display:none;
-	}
-	header .small_right{
-		display:block;
-		height:3em;
-		line-height:4em;
-		float:right;
-		color:#fff;
-		margin-right:0.5em;
-		margin-top:0.5em;
-	}
-	header .small_nav{
-		display:block;
-		height:0em;
-		width:100%;
-		opacity:0.3;
-		transition:all 0.5s ease-in-out;
-	}
-	header .small_nav ul{
-		display:block;
-		height:100%;
-		width:100%;
-	}
-	header .small_nav ul li{
-		display:block;
-		height:25%;
-		width:100%;
-		line-height:5em;
-		text-align:center;
-		color:#fff;
-		border-top:0.1em solid #fff;
-		background-color:#000;
-	}
-	header .small_nav ul li a{
-		text-decoration:none;
-		color:#fff;
-	}
-	.banner{
-		background-position:-200px 0px;
-	}
-}
-  </style>
-  <script type="text/javascript" src="jquery.js"></script>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
 </head>
 <body id="index">
 	<header>
@@ -168,7 +17,7 @@ header .small_nav{
 			<ul>
 				<li><a href="#index" class="l_index">Index</a></li>
 				<li><a href="#about" class="l_about">About</a></li>
-				<li><a href="#contact" class="l_contact">Contact</a></li>
+				<li><a href="#contact" class="l_contact">Group</a></li>
 				<li><a href="#join" class="l_join">Join</a></li>
 			</ul>
 		</div>
@@ -180,17 +29,52 @@ header .small_nav{
 			<ul>
 				<li><a href="#index" class="l_index">Index</a></li>
 				<li><a href="#about" class="l_about">About</a></li>
-				<li><a href="#contact" class="l_contact">Contact</a></li>
+				<li><a href="#contact" class="l_contact">Group</a></li>
 				<li><a href="#join" class="l_join">Join</a></li>
 			</ul>
 		</div>
 	</header>
 	<section class="banner">
-		<div></div>
 	</section>
-	<section class="about" id="about"></section>
-	<section class="contact" id="contact"></section>
-	<section class="join" id="join"></section>
+	<section class="about" id="about">
+		<div class="container">
+		</div>
+	</section>
+	<section class="contact" id="contact">
+		<div class="left">
+		</div>
+		<div class="right"> 
+		</div>
+	</section>
+	<section class="join" id="join">
+		<div class="main">
+			<div class="j_title">We are waiting for you</div>
+			<form action="" method="post">
+				<div>
+					<input type="text" name="name" value="Name" id="name" onfocus="javascript:if (this.value=='Name') {this.value='';}" onblur="javascript:if (this.value=='') {this.value='Name'}">
+				</div>
+				<div>
+					<input type="text" name="tel" value="Tel" id="tel" onfocus="javascript:if (this.value=='Tel') {this.value=''}" onblur="javascript:if (this.value=='') {this.value='Tel'}">
+				</div>
+				<div>
+					<input type="text" name="email" value="Email" id="email" onfocus="javascript:if (this.value=='Email') {this.value=''}" onblur="javascript:if (this.value=='') {this.value='Email'}">
+				</div>
+				<div>
+					<select id="choose">
+						<option>technology department</option>
+						<option>operational department</option>
+					</select>
+				</div>
+				<div class="clear"></div>
+				<div>
+					<textarea cols="10" name="aboutYou" value="Talk something about you" id="aboutYou" onfocus="javascript:if (this.value=='Talk something about you') {this.value=''}" onblur="javascript:if (this.value=='') {this.value='Talk something about you'}"></textarea>
+				</div>
+				<div>
+					<button>submit</button>
+				</div>
+			</form>
+		</div>
+	</section>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript">
 	$(".small_right").toggle(function(){
@@ -209,6 +93,23 @@ header .small_nav{
 			return false;
 		})
 	}
+	var sign = 1;
+	var wordsList = ["The unexamined life is not worth living","Genius only means hard-working all one's life","Cease to struggle and you cease to live"];
+	function showWords(index){
+		$('#words').html(wordsList[index]); 
+		$("#words").css('opacity','1');
+		var lis = document.getElementById('focusBox').getElementsByTagName('li');
+		for (var i=0;i<lis.length;i++){
+			lis[i].className = "cur";
+		}
+		lis[index].className = "cur1";
+	}
+	function setPic(){
+		$('#words').css('opacity','0');
+		setTimeout("showWords(sign%3)",500);
+		sign++;
+	}
+	window.setInterval("setPic()",5000);
 </script>
 </body>
 </html>
