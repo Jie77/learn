@@ -4,84 +4,42 @@
 	<title></title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style1.css">
-</head>
-<body id="index">
-	<header>
-		<div class="left">
-			<a href="#">xdbdc</a>
-		</div>
-		<div class="right">
-			<ul>
-				<li><a href="#index" class="l_index">Index</a></li>
-				<li><a href="#about" class="l_about">About</a></li>
-				<li><a href="#contact" class="l_contact">Group</a></li>
-				<li><a href="#join" class="l_join">Join</a></li>
-			</ul>
-		</div>
-		<div class="small_right">
-			<i class="fa fa-bars fa-3x" aria-hidden="true"></i>
-		</div>
-		<div class="clear"></div>
-		<div class="small_nav">
-			<ul>
-				<li><a href="#index" class="l_index">Index</a></li>
-				<li><a href="#about" class="l_about">About</a></li>
-				<li><a href="#contact" class="l_contact">Group</a></li>
-				<li><a href="#join" class="l_join">Join</a></li>
-			</ul>
-		</div>
-	</header>
-	<section class="banner">
-	</section>
-	<section class="about" id="about">
-	</section>
-	<section class="contact" id="contact">
-		<div class="left">
-		</div>
-		<div class="right"> 
-		</div>
-	</section>
-	<section class="join" id="join">
-		
-	</section>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript">
-	$(".small_right").toggle(function(){
-		$(".small_nav").css('height','20em');
-		$(".small_nav").css('opacity','1');
-	},function(){
-		$(".small_nav").css('height','0');
-		$(".small_nav").css('opacity','0.3');
-	})
-	var target = [$('.l_index'),$('.l_about'),$('.l_contact'),$('.l_join')];
-	for(var i=0; i<target.length ;i++){
-		target[i].bind('click',function(){
-			$('html body').animate({
-				scrollTop:$($(this).attr('href')).offset().top
-			},500);
-			return false;
-		})
-	}
-	var sign = 1;
-	var wordsList = ["The unexamined life is not worth living","Genius only means hard-working all one's life","Cease to struggle and you cease to live"];
-	function showWords(index){
-		$('#words').html(wordsList[index]); 
-		$("#words").css('opacity','1');
-		var lis = document.getElementById('focusBox').getElementsByTagName('li');
-		for (var i=0;i<lis.length;i++){
-			lis[i].className = "cur";
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
 		}
-		lis[index].className = "cur1";
-	}
-	function setPic(){
-		$('#words').css('opacity','0');
-		setTimeout("showWords(sign%3)",500);
-		sign++;
-	}
-	window.setInterval("setPic()",5000);
-</script>
+		html,body{
+			height:100%;
+			width:100%;
+		}
+		.first{
+			width:100%;
+			height:100%;
+			background:url(./image/369H.jpg) no-repeat fixed;
+		}
+		.second{
+			width:100%;
+			height:100%;
+			background:red;
+		}
+		.third{
+			width:100%;
+			height:100%;
+			background:yellow;
+		}
+		p{
+			position:relative;
+			top:500px;
+			font-size:20px;
+		}
+	</style>
+</head>
+<body>
+<div class="first">
+	<p>cbhadbcuidbui</p>
+</div>
+<div class="second"></div>
+<div class="third"></div>
 </body>
 </html>
