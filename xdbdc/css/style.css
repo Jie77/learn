@@ -506,6 +506,9 @@ header .small_nav{
 		margin:0 3%;
 		font-size:0.5em;
 	}
+	.contact .left_cover,.contact .right_cover{
+		display:block;
+	}
 	.join{
 		height:28em;
 	}
