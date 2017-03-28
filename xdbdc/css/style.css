@@ -27,6 +27,18 @@ body:before{
 .clear{
 		clear:both;
 	}
+.cover{
+	position:fixed;
+	width:100%;
+	height:100%;
+	z-index:200;
+	background-color:#1E1C1C;
+	color:#fff;
+}
+#show_code{
+	margin:0 auto;
+	width:35%;
+}
 header{
 	width:100%;
 	height:4em;
@@ -208,7 +220,20 @@ header .small_nav{
 	margin-top:5%;
 }
 /*-------------------------about end -----------------------*/
-
+.contact .left_cover,.contact .right_cover{
+	display:none;
+	position:absolute;
+	background-color:#000;
+	opacity:0.5;
+	width:50%;
+	height:100%;
+}
+.contact .left_cover{
+	left:0;
+}
+.contact .right_cover{
+	right:0;
+}
 .contact .left{
 	display:block;
 	height:100%;
@@ -216,8 +241,7 @@ header .small_nav{
 	float:left;
 	background:url(../image/programmer.jpg) no-repeat;
 	background-size:cover;
-	color:#fff;
-	font-size:2em;
+	
 }
 .contact .right{
 	display:block;
@@ -226,13 +250,12 @@ header .small_nav{
 	float:right;
 	background:url(../image/Operation.jpg) no-repeat;
 	background-size:cover;
-
-	color:#666;
-	font-size:2em;
 }
 .contact h3{
 	display:block;
 	margin:16% 10%;
+	color:#fff;
+	font-size:2em;
 }
 /*-----------------------contact end-----------------------*/
 
@@ -312,6 +335,9 @@ header .small_nav{
 
 /*-----------------------join end--------------------------*/
 @media screen and (max-width:499px) {
+	#show_code{
+		width:100%;
+	}
 	header .right{
 		display:none;
 	}

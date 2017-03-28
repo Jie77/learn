@@ -9,6 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body id="index">
+<div class="cover">
+	<div id="show_code"></div>
+</div>
 	<header>
 		<div class="left">
 			<a href="#">xdbdc</a>
@@ -58,12 +61,14 @@
 		</div>
 	</section>
 	<section class="contact" id="contact">
-		<div class="left">
-			<h3>            </h3>
+		<div class="left_cover">
+			<h3>jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</h3>
 		</div>
-		<div class="right"> 
-			<h3>             </h3>
+		<div class="left"></div>
+		<div class="right_cover">
+			<h3>jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</h3>
 		</div>
+		<div class="right"></div>
 	</section>
 	<section class="join" id="join">
 		<div class="main">
@@ -94,15 +99,40 @@
 			</form>
 		</div>
 	</section>
-<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery1.js"></script>
 <script type="text/javascript">
-	$(".small_right").toggle(function(){
+
+var str = "var our_name = 'XDBDC';<br>var our_purpose = 'learn from each other';<br>var our_belief = 'talk is cheap, show me the code';<br>function Join(your_name,you_tel,you_choose){<br>this.name = your_name;<br>this.tel = your_tel;<br>this.choose = your_choose;<br>}<br>Join.prototype.init = function(){<br>console.log('welcome to XDBDC');<br>}<br>var you = new Join(xxx,xxx,xxx);<br>you.init();<br>";
+var arr = str.split('');
+var s = '';
+var arrl = arr.length;
+function output(){
+	if (arrl>0) {
+		s  += arr.shift(); 
+		document.getElementById('show_code').innerHTML = s;
+		arrl--;
+	}else{
+		clearInterval(a);
+		$('.cover').fadeOut(500);
+	}
+	
+}
+var a = setInterval(output,100);
+
+var cnt=0;
+$(".small_right").click(function(){
+	if(cnt==0){
 		$(".small_nav").css('height','20em');
 		$(".small_nav").css('opacity','1');
-	},function(){
+		cnt=1;
+	}
+	else{
 		$(".small_nav").css('height','0');
 		$(".small_nav").css('opacity','0.3');
-	})
+		cnt=0;
+	}
+})
+
 	var target = [$('.l_index'),$('.l_about'),$('.l_contact'),$('.l_join')];
 	for(var i=0; i<target.length ;i++){
 		target[i].bind('click',function(){
@@ -129,6 +159,20 @@
 		sign++;
 	}
 	window.setInterval("setPic()",5000);
+
+	if ($(window).width()>900) {
+		$(".left").mouseenter(function(){
+			$(".left_cover").fadeIn(500).mouseleave(function(){
+				$(".left_cover").fadeOut(500);
+			})
+		})
+		$(".right").mouseenter(function(){
+			$(".right_cover").fadeIn(500).mouseleave(function(){
+				$(".right_cover").fadeOut(500);
+			})
+		})
+	}
+		
 </script>
 </body>
 </html>
