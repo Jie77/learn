@@ -83,7 +83,7 @@ header .right ul li{
 	float:left;
 	height:4em;
 	line-height:4em;
-	margin-right:0.8em;
+	margin-right:1.8em;
 }
 header .right ul li a{
 	color:#fff;
@@ -103,7 +103,7 @@ header .small_nav{
 /*--------------------------header end-----------------------------*/
 .banner{
 	width:100%;
-	height:100%;
+	height:85%;
 	z-index:1;
 	position:relative;
 }
@@ -113,7 +113,7 @@ header .small_nav{
 	height:30%;
 	position:relative;
 	top:38%;
-	left:25%;
+	margin:0 auto;
 	text-align:center;
 }
 .banner .title h1{
@@ -157,7 +157,7 @@ header .small_nav{
 /*-------------------------section1 end----------------------------*/
 
 /*--------------------------------------------------*/
-.join,.contact,.about{
+.contact,.about{
 	width:100%;
 	height:70%;
 	z-index:10;
@@ -179,12 +179,13 @@ header .small_nav{
 	color: #212121;
 	letter-spacing: 1px;
 	margin-bottom: 5%;
+	padding:2%;
 }
 .about .container .title:before{
 	content: "";
     width: 100%;
     height: 4px;
-    background: #f1f2f2;
+    background: #9B9797;
     position: absolute;
     top: 50%;
     left: 0;
@@ -212,7 +213,6 @@ header .small_nav{
 	display:block;
 	float:right;
 	width:50%;
-	height:100%;
 	color:#666;
 	font-size:2em;
 }
@@ -263,11 +263,14 @@ header .small_nav{
 .join{
 	background-color:#07070F;
 	font-family:cursive;
+	width:100%;
+	z-index:10;
+	position:relative;
 }
 .join .main{
-	height:100%;
 	width:55%;
 	margin:0 auto;
+	padding-bottom:2em;
 }
 .join .main .j_title{
 	display:block;
@@ -385,14 +388,12 @@ header .small_nav{
 		width:80%;
 		height:50%;
 		left:10%;
+		margin:0;
 	}
 	.banner .title h1{
 		font-size:2.2em;
 	}
 	.contact,.about{
-		height:42em;
-	}
-	.join{
 		height:42em;
 	}
 	.about .container .item img{
@@ -434,10 +435,11 @@ header .small_nav{
 		position:relative;
 		top:10%;
 		margin:0 3%;
-		font-size:0.8em;
+		font-size:1.1em;
+		padding-top:2em;
 	}
 	.join .main{
-		width:100%;
+		width:96%;
 	}
 	.join .main .j_title{
 		padding:0;
@@ -487,6 +489,7 @@ header .small_nav{
 		width:80%;
 		height:50%;
 		left:10%;
+		margin:0;
 	}
 	.banner .title h1{
 		font-size:2.2em;
@@ -500,20 +503,20 @@ header .small_nav{
 	.about .container .item .introduce h3{
 		margin-top:0;
 	}
+	.about .container .item .introduce h5{
+		margin-top:4%;
+	}
 	.contact h3{
 		position:relative;
 		top:10%;
 		margin:0 3%;
-		font-size:0.5em;
+		font-size:1em;
 	}
 	.contact .left_cover,.contact .right_cover{
 		display:block;
 	}
-	.join{
-		height:28em;
-	}
 	.join .main{
-		width:98%;
+		width:96%;
 	}
 	.join .main .j_title{
 		padding:0;
