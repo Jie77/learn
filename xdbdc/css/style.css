@@ -300,6 +300,7 @@ header .small_nav{
 	font-size:1.5em;
 	margin-top:1em;
 	color:#666;
+	border-radius:7px;
 }
 .join .main select{
 	display:block;
@@ -310,6 +311,7 @@ header .small_nav{
 	font-size:1.5em;
 	margin-top:1em;
 	color:#666;
+	border-radius:7px;
 }
 .join .main #name,.join .main #email{
 	float:left;
@@ -323,6 +325,7 @@ header .small_nav{
 	margin-top:1em;
 	font-size:1.4em;
 	color:#666;
+	border-radius:7px;
 }
 .join .main button{
 	display:block;
@@ -331,7 +334,7 @@ header .small_nav{
 	border:1px solid #1562AD;
 	font-size:1.3em;
 	font-family:cursive;
-	border-radius:30px;
+	border-radius:20px;
 	background-color:#0E577C;
 	box-shadow:0 0 2px #1562AD;
 	margin-top:1em;
@@ -479,7 +482,7 @@ header .small_nav{
 		display:block;
 	}
 	.join .main button{
-		width:90%;
+		width:96%;
 		margin:0 auto;
 		margin-top:1em;
 	}

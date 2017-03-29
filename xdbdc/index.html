@@ -7,6 +7,12 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+		var str = "var our_name = 'XDBDC';<br>var our_purpose = 'learn from each other';<br>var our_belief = 'talk is cheap, show me the code';<br>function Join(your_name,you_tel,you_choose){<br>this.name = your_name;<br>this.tel = your_tel;<br>this.choose = your_choose;<br>}<br>Join.prototype.init = function(){<br>console.log('welcome to XDBDC');<br>}<br>var you = new Join(xxx,xxx,xxx);<br>you.init();<br>";
+		var arr = str.split('');
+		var s = '';
+		var arrl = arr.length;
+	</script>
 </head>
 <body id="index">
 <div class="cover">
@@ -101,11 +107,6 @@
 	</section>
 <script type="text/javascript" src="jquery1.js"></script>
 <script type="text/javascript">
-
-var str = "var our_name = 'XDBDC';<br>var our_purpose = 'learn from each other';<br>var our_belief = 'talk is cheap, show me the code';<br>function Join(your_name,you_tel,you_choose){<br>this.name = your_name;<br>this.tel = your_tel;<br>this.choose = your_choose;<br>}<br>Join.prototype.init = function(){<br>console.log('welcome to XDBDC');<br>}<br>var you = new Join(xxx,xxx,xxx);<br>you.init();<br>";
-var arr = str.split('');
-var s = '';
-var arrl = arr.length;
 function output(){
 	if (arrl>0) {
 		s  += arr.shift(); 
@@ -117,7 +118,7 @@ function output(){
 	}
 	
 }
-var a = setInterval(output,10);
+var a = setInterval(output,30);
 
 var cnt=0;
 $(".small_right").click(function(){
