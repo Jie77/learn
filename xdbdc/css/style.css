@@ -10,6 +10,7 @@ html{
 	font-size:100%
 }
 body{
+	font-size:16px;
 	font-size:1em;
 	font-family:微软雅黑;
 }
@@ -217,14 +218,14 @@ header .small_nav{
 	font-size:2em;
 }
 .about .container .item .introduce h5{
-	margin-top:10%;
+	margin-top:7%;
 }
 /*-------------------------about end -----------------------*/
 .contact .left_cover,.contact .right_cover{
 	display:none;
 	position:absolute;
 	background-color:#000;
-	opacity:0.5;
+	opacity:0.7;
 	width:50%;
 	height:100%;
 	color:#666;
