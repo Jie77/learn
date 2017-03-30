@@ -20,7 +20,6 @@
 	var div2 = document.createElement("div");
 	div2.setAttribute('id','show_code');
 	div1.appendChild(div2);
-	console.log(div1);
 	document.body.appendChild(div1);
 	function output(){
 	if (arrl>0) {
@@ -29,7 +28,9 @@
 		arrl--;
 	}else{
 		clearInterval(a);
-		$('.cover').fadeOut(500);
+		if (document.readyState == "complete") {
+			$('.cover').fadeOut(500);
+		}
 	}
 }
 	var a = setInterval(output,100);
@@ -121,6 +122,17 @@
 			</form>
 		</div>
 	</section>
+	<footer>
+		<div class="top">
+			<a href="index.html">XDBDC</a>
+			<p>欢迎加入百度大家庭</p>
+			<P>contact:1007172767@qq.com</P>
+		</div>
+		<div class="bottom">
+			<span><i class="fa fa-copyright" aria-hidden="true"></i>2017</span>
+			<span>Site by J.jie</span>
+		</div>
+	</footer>
 <script type="text/javascript" src="jquery1.js"></script>
 <script type="text/javascript">
 

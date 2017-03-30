@@ -262,7 +262,7 @@ header .small_nav{
 /*-----------------------contact end-----------------------*/
 
 .join{
-	background-color:#07070F;
+	background-color:#1E1E23;
 	font-family:cursive;
 	width:100%;
 	z-index:10;
@@ -339,6 +339,40 @@ header .small_nav{
 	background-color:#0E577C;
 	box-shadow:0 0 2px #1562AD;
 	margin-top:1em;
+}
+footer{
+	background-color:#101010;
+	color:#fff;
+}
+footer .top,footer .bottom{
+	width:100%;
+}
+footer .top a{
+	display:block;
+	width:5em;
+	margin:0 auto;
+	text-decoration:none;
+	text-align:center;
+	color:#fff;
+	padding-top:0.2em;
+}
+footer .top p{
+	display:block;
+	margin:0 auto;
+	text-align:center;
+	width:24em;
+	padding-top:0.5em;
+}
+footer .bottom{
+	border-top:1px solid #666;
+	width:80%;
+	margin:0 auto;
+	position:relative;
+	padding-top:1em;
+}
+footer .bottom span:last-child{
+	position:absolute;
+	right:0;
 }
 
 /*-----------------------join end--------------------------*/
