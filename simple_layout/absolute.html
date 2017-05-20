@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>absolute</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			padding:0;
+			margin:0;
+		}
+		html,body{
+			height:100%;
+		}
+		.left,.right{
+			position:absolute;
+			height:100%;
+			top:0;
+			width:200px;
+		}
+		.left{
+			left:0;
+			background:lightgreen;
+		}
+		.middle{
+			background:#F9F86B;
+			margin:0 200px 0 200px;
+			height:100%;
+		}
+		.right{
+			right:0;
+			background:lightblue;
+			
+		}
+	</style>
+</head>
+<body>
+<div class="left"></div>
+<div class="middle"></div>
+<div class="right"></div>
+</body>
+</html>
